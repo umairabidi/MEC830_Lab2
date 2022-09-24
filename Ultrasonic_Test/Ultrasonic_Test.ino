@@ -23,7 +23,7 @@ void loop() {
 	double distance;
 	
 	trigger();	// Send a 10 uS pulse
-	distance = pulseIn(ECHO, HIGH, 25000)/58.0;		// Convert ECHO pulse width to distance in cm
+	distance = pulseIn(ECHO, HIGH, 25000)/57.753;		// Convert ECHO pulse width to distance in cm
 	
 	// Print to the LCD
 	char lcd_buffer[16] = {0};
